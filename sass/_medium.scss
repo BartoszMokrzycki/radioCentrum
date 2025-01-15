@@ -1,0 +1,115 @@
+@media (min-width: 768px) {
+	.wrapper {
+		display: flex;
+		height: 100vh;
+		align-items: self-start;
+
+		.left-panel {
+			.links-panel {
+				&-link {
+					margin: 3em 0;
+				}
+			}
+		}
+	}
+
+	.main-audition {
+		.audition-section {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+			.audition-box {
+				width: 70%;
+				padding-right: 4em;
+				padding-bottom: 0;
+				border: 1px solid #c28f8d;
+
+				.audition-img {
+					width: 160px;
+					height: 160px;
+				}
+
+				.info {
+					align-items: end;
+				}
+
+				.day {
+					font-size: 1.6rem;
+				}
+
+				.name {
+					font-size: 1.8rem;
+				}
+
+				.speaker {
+					font-size: 1.4rem;
+				}
+			}
+
+			.audition-two {
+				padding-right: 0;
+				padding-left: 4em;
+			}
+		}
+	}
+
+	//news
+
+
+
+	.news-block-section {
+		padding: 2em;
+		.news-item {
+			&__info {
+				padding: 2em;
+
+				&--subject {
+					font-size: 1.4rem;
+				}
+
+				&--text {
+					font-size: 1.8rem;
+				}
+			}
+		}
+	}
+
+	.fastMusic {
+		.left {
+			img {
+				width: 300px;
+			}
+		}
+
+		.song-data {
+			width: 350px;
+			padding: 1em 2em;
+			background-color: #fff;
+			border-top-left-radius: 24px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			.title {
+				font-size: 1.4rem;
+				color: #333;
+				font-weight: 600;
+			}
+
+			.artist {
+				font-size: 1.2rem;
+				color: #e13029;
+				font-weight: bold;
+			}
+
+			.playBtn {
+				border: 6px solid #e13029;
+				border-radius: 50%;
+				width: 40px;
+				height: 40px;
+			}
+		}
+	}
+}

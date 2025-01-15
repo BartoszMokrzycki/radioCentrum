@@ -1,0 +1,73 @@
+@media (min-width: 1200px) {
+    .wrapper {
+        .left-panel {
+            width: 80%;
+
+            .links-panel {
+                width: 60%;
+                
+                &-link {
+                    padding: 0.8em 2em;
+                }
+            }
+        }
+		
+	}
+
+    .main-audition {
+		.audition-section {
+			
+
+			.audition-box {
+				width: 80%;
+				padding-right: 4em;
+				
+
+				.audition-img {
+					width: 160px;
+					height: 160px;
+				}
+
+				.info {
+					align-items: end;
+				}
+
+				.day {
+					font-size: 1.8rem;
+				}
+
+				.name {
+					font-size: 2rem;
+				}
+
+				.speaker {
+					font-size: 1.6rem;
+				}
+			}
+
+			.audition-two {
+				padding-right: 0;
+				padding-left: 4em;
+			}
+		}
+	}
+
+    .main-news {
+        padding: 2em 6em;
+
+        .shortNews-box {
+            font-size: 1.8rem;padding-top: 2em;
+        }
+    }
+
+	.main-toplist {
+		.toplist-leftPanel {
+			width: 40%;
+			margin-right: 150px;
+		}
+
+		.toplist-rightPanel {
+			width: 25%;
+		}
+	}
+}

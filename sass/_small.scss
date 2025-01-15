@@ -1,0 +1,36 @@
+@media (min-width: 576px) {
+	.fastMusic {
+		.left {
+			img {
+				width: 250px;
+			}
+		}
+	}
+
+	.main-toplist {
+		.toplist-leftPanel {
+			.songBox--data {
+				.data--song {
+					.song--title {
+						width: 100%;
+						font-size: 1.8rem;
+					}
+
+					.song--artist {
+						font-size: 1.6rem;
+					}
+				}
+			}
+		}
+	}
+
+	.main-contact {
+		.rightPanel {
+			&__map {
+				iframe {
+					width: 80%;
+				}
+			}
+		}
+	}
+}

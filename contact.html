@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Radio Centrum - kontakt</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&display=swap"
+			rel="stylesheet" />
+		<script
+			src="https://kit.fontawesome.com/e6248a83de.js"
+			crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="./css/main.css" />
+	</head>
+	<body>
+		<nav class="nav">
+			<a href="./audition.html" class="nav-item-desktop">ramówka</a>
+			<a href="./news.html" class="nav-item-desktop">aktualności</a>
+			<a href="./index.html"
+				><img src="./img/radiocentrumRed.png" alt="logo radio centrum"
+			/></a>
+			<a href="./topList.html" class="nav-item-desktop">top lista</a>
+			<a href="./contact.html" class="nav-item-desktop">kontakt</a>
+		</nav>
+		<main class="main-contact">
+			<div class="leftPanel">
+				<h2 class="section-heading">napisz do nas</h2>
+				<div class="form">
+					<label for="personalData">imię i nazwisko:</label>
+					<input type="text" id="personalData" placeholder="np. Jan Kowalski" />
+					<label for="email">adres email:</label>
+					<input
+						type="text"
+						id="email"
+						placeholder="np. jankowalski@gmail.com" />
+					<label for="phone-number">numer telefonu:</label>
+					<input
+						type="number"
+						id="phone-number"
+						placeholder="np. +48 800 800 800" />
+					<label for="textarea">treść:</label>
+					<textarea id="textarea"></textarea>
+					<button class="sendBtn">wyślij</button>
+				</div>
+			</div>
+			<div class="rightPanel">
+				<div class="rightPanel__map">
+					<h2 class="section-heading">znajdź nas na mapie</h2>
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.53401379123!2d21.98077977683064!3d50.020088718256964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473cfbb158305f9f%3A0x71f0cdc21d2eab5c!2sIkar%2C%20Akademicka%206%2C%2035-084%20Rzesz%C3%B3w!5e0!3m2!1sen!2spl!4v1736701410508!5m2!1sen!2spl"
+						allowfullscreen=""
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+				<div class="rightPanel__address">
+					<h2 class="section-heading">skontaktuj śię z nami</h2>
+					<div class="adressBox">
+						<div class="address">
+							<p class="address--name">adres</p>
+							<p>Akademickie Radio Centrum</p>
+							<p>ul. Akademicka 6</p>
+							<p>35-084</p>
+							<p>D.S. Ikar</p>
+						</div>
+						<div class="redaction">
+							<div class="redaction--data">
+								<p class="redaction--data__name">redakcja</p>
+								<p>redakcja@radiocentrum.pl</p>
+								<p>(17) 85-40-101</p>
+							</div>
+							<div class="audition--data">
+								<p class="audition--data__name">antena</p>
+								<p>antena@radiocentrum.pl</p>
+								<p>(17) 85-40-222</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+	<script src="./main.js"></script>
+</html>

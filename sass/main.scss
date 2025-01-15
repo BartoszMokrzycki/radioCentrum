@@ -1,0 +1,667 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Kodchasan', serif;
+	// position: relative;
+}
+
+nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #e13029;
+	padding: 2em 0;
+
+	img {
+		width: 200px;
+	}
+
+	.nav-item-desktop {
+		display: none;
+	}
+}
+
+main {
+	max-width: 1600px;
+	margin: 0 auto;
+}
+
+.section-heading {
+	font-size: 2.4rem;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 1.2em 0;
+	font-weight: 600;
+}
+
+.shadow {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+	top: 0;
+}
+
+.hidden {
+	display: none;
+}
+
+.wrapper {
+	.left-panel {
+		width: 100vw;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		.radioLogo-white {
+			padding: 2em 0;
+			img {
+				width: 300px;
+			}
+		}
+
+		.links-panel {
+			width: 100%;
+			padding: 3em;
+
+			&-link {
+				margin: 1.2em 0;
+				padding: 0.5em 1.5em;
+				font-size: 2rem;
+				color: #333;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				text-decoration: none;
+				border: 1px solid #9b9999;
+				border-radius: 20px;
+				text-transform: uppercase;
+				transition: transform 0.3s, border 0.3s, color 0.3s;
+
+				.fa-arrow-right-long {
+					transition: transform 0.3s;
+				}
+
+				&:hover {
+					border: 1px solid #e13029;
+					color: #e13029;
+				}
+
+				&:hover .fa-arrow-right-long {
+					transform: translateX(12px);
+				}
+
+				.icon {
+					padding-right: 0.3em;
+				}
+			}
+		}
+	}
+
+	.right-panel {
+		position: absolute;
+		padding: 1.5em 0;
+		bottom: 0;
+		width: 100vw;
+		background-color: #da291c;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+
+		.fa-brands {
+			font-size: 4rem;
+			text-decoration: none;
+			color: white;
+		}
+
+		img {
+			height: 45px;
+			width: 45px;
+		}
+
+		.micImg {
+			display: none;
+		}
+	}
+}
+
+//ramówka
+.audition-box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 2em 3em;
+	padding-bottom: 2em;
+
+	img {
+		height: 100px;
+		width: 100px;
+	}
+
+	.audition-img {
+		position: relative;
+		background-size: cover;
+		background-position: center;
+		width: 100px;
+		height: 100px;
+		z-index: 1;
+		.shadow {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(224, 47, 41, 0.2);
+			top: 0;
+		}
+	}
+
+	.one {
+		background-image: url('../img/auditionImg1.png');
+	}
+
+	.two {
+		background-image: url('../img/auditionImg2.png');
+	}
+
+	.three {
+		background-image: url('../img/auditionImg3.png');
+	}
+
+	&--info {
+		font-weight: 600;
+		text-transform: uppercase;
+		text-align: right;
+
+		.info {
+			padding: 0.3em 0em;
+		}
+		.day {
+			font-size: 1.4rem;
+			color: #e13029;
+		}
+
+		.name {
+			font-size: 1.6rem;
+			font-weight: bold;
+		}
+		.speaker {
+			font-size: 1.2em;
+			font-weight: 300;
+		}
+	}
+}
+
+.audition-two {
+	.audition-box--info {
+		text-align: left;
+	}
+}
+
+.other-auditions {
+	.grid-container {
+		position: relative;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		margin-bottom: 2em;
+	}
+
+	.grid-item {
+		display: grid;
+		position: relative;
+		text-align: right;
+		padding: 1em;
+		margin: 1em;
+		height: 120px;
+		align-items: end;
+		text-transform: uppercase;
+		background-image: url('../img/radiocentrumRed.png');
+		background-position: center;
+		background-size: cover;
+		border: 1px solid #c28f8d;
+
+		.shadow {
+			position: absolute;
+			background-color: rgba(255, 251, 251, 0.95);
+			width: 100%;
+			height: 100%;
+			top: 0;
+			z-index: 1;
+			transition: background-color 0.2s;
+		}
+
+		&:hover .shadow {
+			background-color: rgba(255, 251, 251, 0.85);
+		}
+
+		span,
+		p {
+			z-index: 10;
+		}
+
+		span {
+			font-size: 1.4rem;
+			font-weight: bold;
+			color: #e13029;
+		}
+
+		p {
+			font-weight: 600;
+		}
+	}
+
+	.item1 {
+		grid-column: span 1;
+		grid-row: span 1;
+	}
+	.item2 {
+		grid-column: span 1;
+		grid-row: span 1;
+	}
+	.item3 {
+		grid-column: span 2;
+		grid-row: span 1;
+	}
+	.item4 {
+		grid-column: span 1;
+		grid-row: span 1;
+	}
+	.item5 {
+		grid-column: span 1;
+		grid-row: span 1;
+	}
+	.item6 {
+		grid-column: span 2;
+		grid-row: span 1;
+	}
+}
+
+//news {
+.news-block-section {
+	padding: 2em;
+	.news-item {
+		position: relative;
+		margin: 1.5em 0;
+		height: 220px;
+		display: flex;
+		align-items: end;
+		overflow: hidden;
+		background-position: center;
+		background-size: 100%;
+		border-radius: 32px;
+		transition: background-size 0.3s;
+
+		&:hover {
+			background-size: 105%;
+		}
+
+		.news-item__info--subject {
+			transition: color 0.3s, background-color 0.3s;
+		}
+
+		&:hover .news-item__info--subject {
+			background-color: #e13029;
+			color: white;
+		}
+
+		&__info {
+			padding: 2em 1em;
+			z-index: 10;
+			font-weight: 600;
+
+			&--subject {
+				width: fit-content;
+				font-size: 1.2rem;
+				padding: 0.5em;
+				background-color: rgba(255, 255, 255, 0.886);
+				border-radius: 8px;
+				text-transform: uppercase;
+			}
+
+			&--text {
+				font-size: 1.6rem;
+			}
+
+			&--text,
+			.moreInfo {
+				padding: 0.5em 0;
+				color: #ddd;
+			}
+		}
+	}
+
+	.news1 {
+		background-image: url('../img/news1.png');
+	}
+
+	.news2 {
+		background-image: url('../img/news2.png');
+	}
+	.news3 {
+		background-image: url('../img/news3.png');
+	}
+
+	.news4,
+	.news5,
+	.news6 {
+		display: none;
+	}
+
+	.shadow {
+		background-color: rgba(53, 50, 50, 0.8);
+	}
+}
+
+.shortNews-section {
+	padding: 0em 2em;
+
+	h2 {
+		text-align: left;
+		color: #e13029;
+	}
+
+	.shortNews-box {
+		margin-top: -3em;
+
+		&--item {
+			&:last-child {
+				border-bottom: none;
+			}
+			padding: 1em 0;
+			font-size: 1.6rem;
+			border-bottom: 1px solid #a5a5a5;
+		}
+	}
+}
+
+.fastMusic {
+	display: flex;
+	background-color: #e13029;
+	align-items: center;
+	margin-top: 3em;
+
+	.left {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		img {
+			width: 100px;
+		}
+	}
+
+	.right {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		text-transform: uppercase;
+
+		.radioOnline {
+			font-size: 2rem;
+			padding: 1em 2em;
+			color: white;
+		}
+
+		.song-data {
+			width: 200px;
+			padding: 1em 2em;
+			background-color: #fff;
+			border-top-left-radius: 24px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			.title {
+				font-size: 1.4rem;
+				color: #333;
+				font-weight: 600;
+			}
+
+			.artist {
+				font-size: 1.2rem;
+				color: #e13029;
+				font-weight: bold;
+			}
+
+			.playBtn-news {
+				border: 6px solid #e13029;
+				border-radius: 50%;
+				width: 40px;
+				height: 40px;
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+//toplist
+
+.main-toplist {
+	// display: flex;
+	// flex-direction: column;
+	// justify-content: center;
+	// align-items: center;
+	.section-heading {
+		color: #e13029;
+	}
+
+	.leftpanel-list {
+		display: flex;
+		flex-direction: column;
+
+		.list__item {
+			padding: 0.8em 2em;
+			display: flex;
+			align-items: center;
+			.item--position {
+				padding-right: 0.5em;
+				font-size: 3rem;
+				font-weight: 600;
+				color: #e13029;
+				width: 50px;
+			}
+		}
+
+		.songBox {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			&--data {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				.data--img {
+					width: 70px;
+					height: 70px;
+					background-size: cover;
+					background-position: center;
+				}
+
+				.data--song {
+					text-transform: uppercase;
+
+					p {
+						padding: 0.2em 0.5em;
+					}
+
+					.song--title {
+						font-size: 1.6rem;
+						color: #e13029;
+						font-weight: 700;
+						width: 180px;
+					}
+					.song--artist {
+						font-size: 1.4rem;
+					}
+				}
+
+				.one {
+					background-image: url('../img/modelkiCover.png');
+				}
+			}
+
+			.playBtn {
+				border: 6px solid #e13029;
+				border-radius: 50%;
+				width: 40px;
+				height: 40px;
+				cursor: pointer;
+			}
+		}
+	}
+
+	.toplist-rightPanel {
+		padding: 0 3em;
+		.section-heading {
+			padding-top: 2em;
+		}
+
+		.topartist {
+			list-style-type: none;
+			margin-bottom: 2em;
+			text-align: right;
+			font-size: 2.2rem;
+			font-weight: 600;
+			border-radius: 36px;
+			border: 1px solid #c0bcbc;
+			overflow: hidden;
+
+			&-item {
+				padding: 0.4em 0.7em;
+			}
+
+			&-item:nth-child(even) {
+				background-color: #c6c6c6;
+			}
+		}
+	}
+}
+
+//contact
+
+.main-contact {
+	.section-heading {
+		color: #e13029;
+	}
+	.leftPanel {
+		.form {
+			display: flex;
+			flex-direction: column;
+			padding: 1em 3em;
+
+			label {
+				font-size: 1.6rem;
+				font-weight: 600;
+				letter-spacing: 1px;
+				text-transform: uppercase;
+				padding-bottom: 0.5em;
+			}
+
+			input {
+				padding: 1em 0.5em;
+				margin-bottom: 1em;
+
+				&::-webkit-outer-spin-button,
+				&::-webkit-inner-spin-button {
+					-webkit-appearance: none;
+					margin: 0;
+				}
+			}
+
+			input,
+			textarea {
+				border-radius: 16px;
+				border: 1px solid #c1c1c1;
+				outline: none;
+				transition: border 0.2s;
+
+				&:focus-visible {
+					border: 1px solid #e13029;
+				}
+			}
+
+			textarea {
+				height: 70px;
+				padding: 0.5em 1em;
+			}
+
+			input::placeholder {
+				font-family: 'Kodchasan', serif;
+				text-transform: uppercase;
+			}
+
+			.sendBtn {
+				font-family: 'Kodchasan', serif;
+				padding: 1em;
+				margin: 1em;
+				border-radius: 24px;
+				border: none;
+				text-transform: uppercase;
+				font-size: 1.6rem;
+				color: white;
+				font-weight: bold;
+				background-color: #e13029;
+				letter-spacing: 1px;
+				cursor: pointer;
+				border: 1px solid #e13029;
+				transition: color 0.3s, background-color 0.3s;
+
+				&:hover {
+					background-color: white;
+					color: #e13029;
+				}
+			}
+		}
+	}
+
+	.rightPanel {
+		&__map {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			// padding: 0em 5em;
+
+			iframe {
+				width: 80%;
+				height: 300px;
+				border: none;
+			}
+		}
+
+		&__address {
+			padding: 0em 2em;
+		}
+
+		p {
+			padding-bottom: 0.5em;
+			font-size: 1.4rem;
+		}
+		.address--name,
+		.redaction--data__name,
+		.audition--data__name {
+			text-transform: uppercase;
+			padding: 0.8em 0;
+			font-size: 1.8rem;
+			font-weight: 600;
+		}
+	}
+}
+
+@import './small';
+@import './medium';
+@import './big';
+@import './large';
+@import './extraLarge';

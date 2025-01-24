@@ -16,13 +16,17 @@
 	</head>
 	<body>
 		<nav class="nav">
-			<a href="./audition.html" class="nav-item-desktop">ramówka</a>
-			<a href="./news.html" class="nav-item-desktop">aktualności</a>
-			<a href="./index.html"
-				><img src="./img/radiocentrumRed.png" alt="logo radio centrum"
-			/></a>
-			<a href="./topList.html" class="nav-item-desktop">top lista</a>
-			<a href="./contact.html" class="nav-item-desktop">kontakt</a>
+			<div>
+				<a href="./index.html"
+					><img src="./img/radiocentrumRed.png" alt="logo radio centrum"
+				/></a>
+			</div>
+			<div class="nav-items">
+				<a href="./audition.html" class="nav-item-desktop">ramówka</a>
+				<a href="./news.html" class="nav-item-desktop">aktualności</a>
+				<a href="./topList.html" class="nav-item-desktop">top lista</a>
+				<a href="./contact.html" class="nav-item-desktop">kontakt</a>
+			</div>
 		</nav>
 		<main class="main-audition">
 			<section class="audition-section">
@@ -90,6 +94,29 @@
 						<p>niedziela 15:00</p>
 						<span>strefa w centrum politechniki rzeszowskiej</span>
 						<div class="shadow"></div>
+					</div>
+				</div>
+				<div class="fastMusic">
+					<div class="left">
+						<img src="./img/radiocentrumRed.png" alt="logo radia centrum" />
+					</div>
+					<div class="right">
+						<p class="radioOnline">radio online</p>
+						<div class="livemusic-box">
+							<div class="song-data">
+								<div class="data">
+									<p class="title">teraz gramy</p>
+									<p class="artist">modelki - on me</p>
+								</div>
+								<button class="playBtn-news">
+									<i class="fa-solid fa-play"></i>
+									<i class="fa-solid fa-pause hidden"></i>
+								</button>
+								<audio
+									id="audio-news"
+									src="./audio/MODELKI - On Me prod. Vłodarski.mp3"></audio>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>

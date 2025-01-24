@@ -18,7 +18,7 @@ body {
 
 nav {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 	background-color: #e13029;
 	padding: 2em 0;
@@ -29,6 +29,15 @@ nav {
 
 	.nav-item-desktop {
 		display: none;
+	}
+
+	.nav-items {
+		display: flex;
+		justify-content: space-between;
+		a {
+			padding: 0em 0.5em;
+			margin: 0em 1em;
+		}
 	}
 }
 
@@ -222,7 +231,7 @@ main {
 		text-align: right;
 		padding: 1em;
 		margin: 1em;
-		height: 120px;
+		height: 90px;
 		align-items: end;
 		text-transform: uppercase;
 		background-image: url('../img/radiocentrumRed.png');
@@ -283,6 +292,20 @@ main {
 	.item6 {
 		grid-column: span 2;
 		grid-row: span 1;
+	}
+
+	.fastMusic {
+		.left {
+			img {
+				width: 200px;
+			}
+		}
+
+		.right {
+			.radioOnline {
+				font-size: 1.6rem;
+			}
+		}
 	}
 }
 
@@ -523,6 +546,10 @@ main {
 	}
 
 	.toplist-rightPanel {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
 		padding: 0 3em;
 		.section-heading {
 			padding-top: 2em;
@@ -532,7 +559,7 @@ main {
 			list-style-type: none;
 			margin-bottom: 2em;
 			text-align: right;
-			font-size: 2.2rem;
+			font-size: 1.8rem;
 			font-weight: 600;
 			border-radius: 36px;
 			border: 1px solid #c0bcbc;
@@ -544,6 +571,23 @@ main {
 
 			&-item:nth-child(even) {
 				background-color: #c6c6c6;
+			}
+		}
+
+		.fastMusic {
+			width: 100%;
+
+			.left {
+				img {
+					width: 80%;
+				}
+			}
+		}
+
+		.right {
+			background-color: #e13029;
+			.radioOnline {
+				font-size: 1.6rem;
 			}
 		}
 	}

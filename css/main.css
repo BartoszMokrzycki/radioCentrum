@@ -18,7 +18,7 @@ body {
 
 nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   background-color: #e13029;
   padding: 2em 0;
@@ -28,6 +28,14 @@ nav img {
 }
 nav .nav-item-desktop {
   display: none;
+}
+nav .nav-items {
+  display: flex;
+  justify-content: space-between;
+}
+nav .nav-items a {
+  padding: 0em 0.5em;
+  margin: 0em 1em;
 }
 
 main {
@@ -193,7 +201,7 @@ main {
   text-align: right;
   padding: 1em;
   margin: 1em;
-  height: 120px;
+  height: 90px;
   align-items: end;
   text-transform: uppercase;
   background-image: url("../img/radiocentrumRed.png");
@@ -248,6 +256,12 @@ main {
 .other-auditions .item6 {
   grid-column: span 2;
   grid-row: span 1;
+}
+.other-auditions .fastMusic .left img {
+  width: 200px;
+}
+.other-auditions .fastMusic .right .radioOnline {
+  font-size: 1.6rem;
 }
 
 .news-block-section {
@@ -449,6 +463,10 @@ main {
   cursor: pointer;
 }
 .main-toplist .toplist-rightPanel {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   padding: 0 3em;
 }
 .main-toplist .toplist-rightPanel .section-heading {
@@ -458,7 +476,7 @@ main {
   list-style-type: none;
   margin-bottom: 2em;
   text-align: right;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   font-weight: 600;
   border-radius: 36px;
   border: 1px solid #c0bcbc;
@@ -469,6 +487,18 @@ main {
 }
 .main-toplist .toplist-rightPanel .topartist-item:nth-child(even) {
   background-color: #c6c6c6;
+}
+.main-toplist .toplist-rightPanel .fastMusic {
+  width: 100%;
+}
+.main-toplist .toplist-rightPanel .fastMusic .left img {
+  width: 80%;
+}
+.main-toplist .toplist-rightPanel .right {
+  background-color: #e13029;
+}
+.main-toplist .toplist-rightPanel .right .radioOnline {
+  font-size: 1.6rem;
 }
 
 .main-contact .section-heading {
@@ -873,6 +903,7 @@ main {
     padding: 0.8em 2em;
   }
   .main-audition .audition-section .audition-box {
+    height: 160px;
     width: 80%;
     padding-right: 4em;
   }
